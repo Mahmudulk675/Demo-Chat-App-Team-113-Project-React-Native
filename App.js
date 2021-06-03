@@ -16,12 +16,7 @@ const globalScreenOptions = {
 export default function App() {
   return (
     <NavigationContainer>
-<<<<<<< HEAD
       <Stack.Navigator>     
-=======
-      <Stack.Navigator screenOptions={globalScreenOptions}>
-        
->>>>>>> 1072168 (Login UI)
         <Stack.Screen name='Login' component={LoginScreen} />
         <Stack.Screen name='Register' component={RegisterScreen} />
       </Stack.Navigator>
