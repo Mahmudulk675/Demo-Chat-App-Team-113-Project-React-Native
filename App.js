@@ -1,14 +1,19 @@
 import { StatusBar } from 'expo-status-bar'
 import React from 'react'
+import 'react-native-gesture-handler'
+import { NavigationContainer } from '@react-navigation/native'
 import { StyleSheet, Text, View } from 'react-native'
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style='auto' />
+    <NavigationContainer>
+      
+      <View style={styles.container}>
+        <StatusBar style='auto' />
 
-      <Text>Chat App!</Text>
-    </View>
+        <Text>Chat App!</Text>
+      </View>
+    </NavigationContainer>
   )
 }
 
