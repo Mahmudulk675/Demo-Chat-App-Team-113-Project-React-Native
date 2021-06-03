@@ -45,7 +45,6 @@ const LoginScreen = ({ navigation }) => {
         />
       </View>
       <Button containerStyle={styles.button} title='Login' onPress={signIn} />
-<<<<<<< HEAD
       <Button
         type='outline'
         containerStyle={styles.button}
@@ -53,10 +52,6 @@ const LoginScreen = ({ navigation }) => {
         onPress={() => navigation.navigate('Register')}
       />
       <View style={{ height: 100 }} />
-=======
-      <Button type='outline' containerStyle={styles.button} title='Register' onPress={() => navigation.navigate('Register')}/>
-      <View style={{height: 100}}/>
->>>>>>> b323702 (Login UI)
     </KeyboardAvoidingView>
   )
 }
@@ -64,28 +59,16 @@ const LoginScreen = ({ navigation }) => {
 export default LoginScreen
 
 const styles = StyleSheet.create({
-<<<<<<< HEAD
   inputContainer: { width: 300 },
   button: {
     width: 200,
     marginTop: 10,
-=======
-  inputContainer: {width:300},
-  button: {
-    width: 200,
-    marginTop:10
->>>>>>> b323702 (Login UI)
   },
   container: {
     flex: 1,
     alignItems: 'centet',
     justifyContent: 'center',
     padding: 10,
-<<<<<<< HEAD
     backgroundColor: 'white',
   },
-=======
-    backgroundColor: 'white'
-  }
->>>>>>> b323702 (Login UI)
 })
