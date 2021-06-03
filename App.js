@@ -7,15 +7,30 @@ import { StyleSheet, Text, View } from 'react-native'
 import LoginScreen from './screens/LoginScreen'
 const Stack = createStackNavigator()
 const globalScreenOptions = {
+<<<<<<< HEAD
   headerStyle: { backgroundColor: '#2c6bed' },
   headerTitleStyle: { color: '#fff' },
   headerTintColor: '#fff',
+=======
+  headerStyle: {backgroundColor: '#2c6bed'},
+  headerTitleStyle: {color: '#fff'},
+  headerTintColor: "#fff"
+>>>>>>> b323702 (Login UI)
 }
 
 export default function App() {
   return (
     <NavigationContainer>
+<<<<<<< HEAD
       <Stack.Navigator screenOptions={globalScreenOptions}>
+=======
+<<<<<<< HEAD
+      <Stack.Navigator>     
+=======
+      <Stack.Navigator screenOptions={globalScreenOptions}>
+        
+>>>>>>> 1072168 (Login UI)
+>>>>>>> b323702 (Login UI)
         <Stack.Screen name='Login' component={LoginScreen} />
       </Stack.Navigator>
     </NavigationContainer>
