@@ -6,10 +6,12 @@ import { auth } from '../firebase.config'
 
 const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [password, setPassword] = useState('');
+   
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
+    console.log(authUser)
       if (authUser) {
         navigation.replace('Home')
       }
@@ -17,7 +19,12 @@ const LoginScreen = ({ navigation }) => {
 
     return unsubscribe
   }, [])
-  const signIn = () => {}
+
+  const signIn = () => {
+    auth.signInWithEmailAndPassword(email, password)
+    .catch((error)=> alert(error))
+  }
+
   return (
     <KeyboardAvoidingView behavior='padding' enabled style={styles.container}>
       <StatusBar styles='light' />
@@ -42,6 +49,7 @@ const LoginScreen = ({ navigation }) => {
           type='password'
           value={password}
           onChangeText={(text) => setPassword(text)}
+          onSubmitEditing={signIn}
         />
       </View>
       <Button containerStyle={styles.button} title='Login' onPress={signIn} />
@@ -66,7 +74,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    alignItems: 'centet',
+    alignItems: 'center',
     justifyContent: 'center',
     padding: 10,
     backgroundColor: 'white',
