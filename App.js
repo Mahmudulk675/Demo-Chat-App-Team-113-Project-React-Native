@@ -7,6 +7,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import LoginScreen from './screens/LoginScreen'
 import RegisterScreen from './screens/RegisterScreen'
 import HomeScreen from './screens/HomeScreen'
+import AddChatScreen from './screens/AddChatScreen'
 const Stack = createStackNavigator()
 const globalScreenOptions = {
   headerStyle: {backgroundColor: '#2c6bed'},
@@ -27,6 +28,7 @@ export default function App() {
         <Stack.Screen name='Login' component={LoginScreen} />
         <Stack.Screen name='Register' component={RegisterScreen} />
         <Stack.Screen name='Home' component={HomeScreen} />
+        <Stack.Screen name='AddChatScreen' component={AddChatScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   )

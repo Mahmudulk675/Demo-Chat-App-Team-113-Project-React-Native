@@ -43,13 +43,13 @@ export default function HomeScreen({navigation}) {
                 </TouchableOpacity>
 
                 <TouchableOpacity>
-                    <SimpleLineIcons name="pencil" size={24} color="black"/>
+                    <SimpleLineIcons onPress={() =>navigation.navigate("AddChatScreen")} name="pencil" size={24} color="black"/>
                 </TouchableOpacity>
 
                </View> 
              ),
          })
-     })
+     },[navigation])
     return (
         <SafeAreaView>
             <ScrollView>
