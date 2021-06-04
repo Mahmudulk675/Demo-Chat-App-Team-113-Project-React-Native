@@ -7,7 +7,8 @@ import { StyleSheet, Text, View } from 'react-native'
 import LoginScreen from './screens/LoginScreen'
 import RegisterScreen from './screens/RegisterScreen'
 import HomeScreen from './screens/HomeScreen'
-import AddChatScreen from './screens/AddChatScreen'
+
+import AddAChatScreen from './screens/AddAChatScreen'
 const Stack = createStackNavigator()
 const globalScreenOptions = {
   headerStyle: {backgroundColor: '#2c6bed'},
@@ -18,17 +19,12 @@ const globalScreenOptions = {
 export default function App() {
   return (
     <NavigationContainer>
-<<<<<<< HEAD
       <Stack.Navigator>     
-=======
-      <Stack.Navigator screenOptions={globalScreenOptions} 
-      initialRouteName="Home"
-      >
->>>>>>> 23dc921 (registration and HomeScreen added)
         <Stack.Screen name='Login' component={LoginScreen} />
         <Stack.Screen name='Register' component={RegisterScreen} />
         <Stack.Screen name='Home' component={HomeScreen} />
-        <Stack.Screen name='AddChatScreen' component={AddChatScreen}/>
+        
+        <Stack.Screen name='AddAChatScreen' component={AddAChatScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   )

@@ -43,7 +43,7 @@ export default function HomeScreen({navigation}) {
                 </TouchableOpacity>
 
                 <TouchableOpacity>
-                    <SimpleLineIcons onPress={() =>navigation.navigate("AddChatScreen")} name="pencil" size={24} color="black"/>
+                    <SimpleLineIcons onPress={() =>navigation.navigate("AddAChatScreen")} name="pencil" size={24} color="black"/>
                 </TouchableOpacity>
 
                </View> 
