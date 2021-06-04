@@ -11,15 +11,15 @@ import HomeScreen from './screens/HomeScreen'
 import AddAChatScreen from './screens/AddAChatScreen'
 const Stack = createStackNavigator()
 const globalScreenOptions = {
-  headerStyle: { backgroundColor: '#2c6bed' },
-  headerTitleStyle: { color: '#fff' },
-  headerTintColor: '#fff',
+  headerStyle: {backgroundColor: '#2c6bed'},
+  headerTitleStyle: {color: '#fff'},
+  headerTintColor: "#fff"
 }
 
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator screenOptions={globalScreenOptions}>
+      <Stack.Navigator>     
         <Stack.Screen name='Login' component={LoginScreen} />
         <Stack.Screen name='Register' component={RegisterScreen} />
         <Stack.Screen name='Home' component={HomeScreen} />
